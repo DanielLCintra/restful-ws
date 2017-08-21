@@ -1,4 +1,3 @@
+const server = require('./server')
 
-const vedovelli = 'batuta'
-
-module.exports = vedovelli;
+server.listen('3456')
