@@ -1,4 +1,3 @@
-const test = require('ava')
 require('dotenv').config()
 
 const mysqlServer = require('mysql')
@@ -15,9 +14,4 @@ const errorHandler = (error, msg, rejectFunction) => {
   rejectFunction({ error: msg })
 }
 
-const categories = require('../categories')({connection, errorHandler})
-
-test('Criação de categoria', async t => {
-  const result = await categories.save('category-test')
-  t.is(result.category.name, 'category-test')
-})
+module.exports = { connection, errorHandler }
