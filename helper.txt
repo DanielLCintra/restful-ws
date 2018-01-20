@@ -19,3 +19,13 @@ create table categories (id INT(11) unsigned not null auto_increment,name VARCHA
 create table users (id INT(11) unsigned not null auto_increment,email VARCHAR(255),password VARCHAR(40), primary key(id));
 
 INSERT INTO users (email, password) VALUES ('cintra.70@gmail.com','7c4a8d09ca3762af61e59520943dc26494f8941b')
+
+
+//.ENV
+MYSQL_HOST = localhost
+MYSQL_USER = root
+MYSQL_PASSWORD = sp21vc64	
+MYSQL_DATABASE = restful_ws
+MYSQL_TEST_DATABASE = restful_ws_test
+
+JWT_SECRET = batata
