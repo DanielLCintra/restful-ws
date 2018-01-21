@@ -1,3 +1,4 @@
+
 const corsMiddleware = require('restify-cors-middleware')
 
 const cors = corsMiddleware({
